@@ -1,0 +1,23 @@
+@mixin flex ($type: 'center') {
+    display: flex;
+
+    @if $type =='space-between' {
+
+        justify-content: space-between;
+
+    }
+
+    @else if $type =='space-around' {
+
+        justify-content: space-around;
+
+    }
+
+    @else if $tipe =='center' {
+
+        justify-content: center;
+
+    }
+
+
+}
