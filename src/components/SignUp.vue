@@ -8,7 +8,7 @@ export default {
 
 <template>
     <div class="sign-up">
-        <div class="contaier">
+        <div class="container">
             <a href="#">SIGN-UP NOW!</a>
             <div class="social">
                 <p><strong>FOLLOW US</strong></p>
