@@ -13,7 +13,10 @@ export default {
 <template>
     <div class="row">
         <div class="card" v-for="(card, i) in comics" :key="i">
-            <img :src="card.thumb" :alt="card.series">
+            <div class="img">
+                <img :src="card.thumb" :alt="card.series">
+            </div>
+
             <p>{{ card.series }}</p>
 
         </div>
@@ -33,8 +36,12 @@ export default {
         margin: 0 5px;
         margin-bottom: 40px;
 
-        img {
+        .img {
             margin-bottom: 8px;
+
+            img {
+                height: 276px;
+            }
         }
     }
 }

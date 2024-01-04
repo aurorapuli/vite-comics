@@ -98,6 +98,9 @@ export default {
             <a href="#">CURRENT SERIES</a>
             <Cards :comics="cards" />
         </div>
+        <div class="button">
+            <a><strong>LOAD MORE</strong></a>
+        </div>
     </main>
 </template>
 
@@ -105,7 +108,7 @@ export default {
 @use '../styles/partials/_variables.scss' as *;
 
 main {
-    background-color: black;
+    background-color: #1c1c1c;
 
     .jumbotron {
         height: 400px;
@@ -124,5 +127,21 @@ main {
 
 .container {
     color: white;
+
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+
+    a {
+        padding: 5px 50px;
+        margin: 20px 0;
+        background-color: $primary;
+        border: none;
+        color: white;
+
+    }
+
 }
 </style>
